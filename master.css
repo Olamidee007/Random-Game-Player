@@ -46,7 +46,7 @@ body {
   margin-top: 25px;
 }
 
-input[type=submit]{
+input[type=submit] {
   background-color: gray; /* Green */
   border: none;
   color: white;
@@ -66,7 +66,7 @@ input[type=submit]{
 
 }
 
-.field-container {
+.gamewrapper {
   position: relative;
   border: 1px solid #bcbaba;
   height: 50px;
@@ -74,7 +74,7 @@ input[type=submit]{
   padding-left: 12px;
 }
 
-.field-placeholder {
+.placeholderfield {
   position: absolute;
   top: 50%;
   transform: translate(5px, -50%);
@@ -83,7 +83,7 @@ input[type=submit]{
   font-size: 16px;
   color: #adadad;
 }
-input[type=text].field-input {
+input[type=text].inputfield {
   color: #000;
   border: none;
   padding: 5px;
@@ -95,24 +95,24 @@ input[type=text].field-input {
   bottom: 0px;
   background-color: transparent;
 }
-input[type=text].field-input:focus {
+input[type=text].inputfield:focus {
   outline: none;
 }
-input[type=text].field-input.c-fix, input[type=text].field-input:focus, input[type=text].field-input:not(:placeholder-shown) {
+input[type=text].inputfield.c-fix, input[type=text].inputfield:focus, input[type=text].inputfield:not(:placeholder-shown) {
   border-color: transparent;
 }
-input[type=text].field-input.c-fix ~ label, input[type=text].field-input:focus ~ label, input[type=text].field-input:not(:placeholder-shown) ~ label {
+input[type=text].inputfield.c-fix ~ label, input[type=text].inputfield:focus ~ label, input[type=text].inputfield:not(:placeholder-shown) ~ label {
   color: #646669;
   font-size: 11px;
   top: calc(30% - 0.5rem);
   transform: translate(5px, 0%);
 }
-input[type=text].field-input::-webkit-input-placeholder {
+input[type=text].inputfield::-webkit-input-placeholder {
   color: transparent;
 }
-input[type=text].field-input::-moz-placeholder {
+input[type=text].inputfield::-moz-placeholder {
   color: transparent;
 }
-input[type=text].field-input:-ms-input-placeholder {
+input[type=text].inputfield:-ms-input-placeholder {
   color: transparent;
 }

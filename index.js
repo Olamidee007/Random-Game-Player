@@ -120,7 +120,7 @@ reset_button.parentNode.removeChild(reset_button);
 guessField.disabled = false
 guessSubmit.disabled = false
 guessField.value = ''
-guessField.focua();
+guessField.focus();
 
 lastResult.style.backgroundColor = 'gold'
 

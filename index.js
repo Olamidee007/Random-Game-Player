@@ -5,8 +5,8 @@ const guessList = document.querySelector('.guess-list');
 const lastResult = document.querySelector('.last-result');
 const lowOrHi = document.querySelector('.low-or-hi');
 
-const guessSubmit = document.querySelector('.inputfield')
-const guessField = document.querySelector('.guess-submit')
+const guessSubmit = document.querySelector('.guess-submit')
+const guessField = document.querySelector('.inputfield')
 
 let guess_count = 1
 let reset_button
@@ -22,7 +22,7 @@ function checkGuess(){
   if (guess_count===1){
     guessList.textContent = 'Previous guesses:'
   }
-  guessList.textContent += userGuess ','
+  guessList.textContent += userGuess + ','
 
   /* =============================
 2. Check if user guessed right
@@ -49,13 +49,13 @@ else {
   if (userGuess < random_number) {
      lowOrHi.textContent = 'Your last guess was too low. Please try again';
     }
-  }
 
 else if (userGuess > random_number) {
   lowOrHi.textContent = 'Your last guess was too high. Please try again';
 }
 
 console.log(guess_count);
+  }
 
 /* =============================
   3. Check if user have exhusted the
